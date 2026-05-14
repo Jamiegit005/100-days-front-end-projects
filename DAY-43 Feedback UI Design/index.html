@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback UI Design</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container" id="panel">
+      <strong>How satisfied are you with our service?</strong>
+      <div class="ratings">
+        <button class="rating" data-rating="1"><i class="fas fa-angry"></i><small>Terrible</small></button>
+        <button class="rating" data-rating="2"><i class="fas fa-frown"></i><small>Bad</small></button>
+        <button class="rating" data-rating="3"><i class="fas fa-meh"></i><small>Okay</small></button>
+        <button class="rating" data-rating="4"><i class="fas fa-smile"></i><small>Good</small></button>
+        <button class="rating" data-rating="5"><i class="fas fa-grin-stars"></i><small>Amazing</small></button>
+      </div>
+      <button id="send" class="btn">Send Review</button>
+    </div>
+
+    <div class="container" id="thanks">
+      <i class="fas fa-heart"></i>
+      <strong>Thank You!</strong>
+      <p>Feedback: <span id="chosen"></span></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

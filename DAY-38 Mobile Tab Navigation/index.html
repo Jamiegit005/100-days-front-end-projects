@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Tab Navigation</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="phone">
+      <div class="content">
+        <div class="tab-content active" id="home">
+          <h2><i class="fas fa-home"></i> Home</h2>
+          <p>Welcome to the home screen.</p>
+        </div>
+        <div class="tab-content" id="work">
+          <h2><i class="fas fa-briefcase"></i> Work</h2>
+          <p>Here is your work content.</p>
+        </div>
+        <div class="tab-content" id="blog">
+          <h2><i class="fas fa-rss"></i> Blog</h2>
+          <p>Latest blog posts go here.</p>
+        </div>
+        <div class="tab-content" id="about">
+          <h2><i class="fas fa-user"></i> About</h2>
+          <p>About me section.</p>
+        </div>
+      </div>
+
+      <nav class="tab-nav">
+        <button class="tab-btn active" data-target="home"><i class="fas fa-home"></i><span>Home</span></button>
+        <button class="tab-btn" data-target="work"><i class="fas fa-briefcase"></i><span>Work</span></button>
+        <button class="tab-btn" data-target="blog"><i class="fas fa-rss"></i><span>Blog</span></button>
+        <button class="tab-btn" data-target="about"><i class="fas fa-user"></i><span>About</span></button>
+      </nav>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

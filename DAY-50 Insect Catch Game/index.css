@@ -1,0 +1,101 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #1a1a2e;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #eee;
+}
+
+/* Start Screen */
+#start-screen {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#start-screen h1 { font-size: 2rem; color: #58a6ff; }
+#start-screen p  { color: #aaa; }
+
+#insect-choices {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.choice {
+  background: #16213e;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.choice small { font-size: 0.7rem; color: #aaa; display: block; margin-top: 6px; }
+.choice:hover { transform: scale(1.1); background: #0f3460; }
+
+/* Game Screen */
+#game-screen { display: none; width: 100vw; height: 100vh; flex-direction: column; }
+
+#hud {
+  display: flex;
+  justify-content: space-around;
+  padding: 14px 20px;
+  background: #16213e;
+  font-size: 1rem;
+  color: #eee;
+}
+
+#hud span span { color: #58a6ff; font-weight: bold; }
+
+#game-area {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: #1a1a2e;
+}
+
+.insect {
+  position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.1s;
+}
+
+.insect:hover { transform: scale(1.2); }
+
+/* End Screen */
+#end-screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+#end-screen h2 { font-size: 2rem; color: #58a6ff; }
+#end-screen p  { color: #aaa; font-size: 1.1rem; }
+#end-screen span { color: #2ecc71; font-weight: bold; }
+
+#restart {
+  padding: 12px 28px;
+  background: #58a6ff;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#restart:hover { background: #3b8fe8; }

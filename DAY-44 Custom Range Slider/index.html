@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Range Slider</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h2>Custom Range Slider</h2>
+
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <label>Red</label>
+        <input type="range" min="0" max="255" value="128" id="red" />
+        <span id="red-val">128</span>
+      </div>
+      <div class="slider-wrapper">
+        <label>Green</label>
+        <input type="range" min="0" max="255" value="128" id="green" />
+        <span id="green-val">128</span>
+      </div>
+      <div class="slider-wrapper">
+        <label>Blue</label>
+        <input type="range" min="0" max="255" value="128" id="blue" />
+        <span id="blue-val">128</span>
+      </div>
+    </div>
+
+    <div id="color-box"></div>
+    <p id="hex-val">#808080</p>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insect Catch Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="start-screen">
+      <h1>Insect Catch Game</h1>
+      <p>Choose your insect to catch</p>
+      <div id="insect-choices">
+        <div class="choice" data-insect="🦟">🦟<br /><small>Mosquito</small></div>
+        <div class="choice" data-insect="🦗">🦗<br /><small>Cricket</small></div>
+        <div class="choice" data-insect="🕷">🕷<br /><small>Spider</small></div>
+        <div class="choice" data-insect="🦂">🦂<br /><small>Scorpion</small></div>
+      </div>
+    </div>
+
+    <div id="game-screen">
+      <div id="hud">
+        <span>Insect: <span id="chosen-insect"></span></span>
+        <span>Score: <span id="score">0</span></span>
+        <span>Time: <span id="timer">30</span>s</span>
+      </div>
+      <div id="game-area"></div>
+    </div>
+
+    <div id="end-screen">
+      <h2>Time's Up! 🎉</h2>
+      <p>You caught <span id="final-score"></span> insects!</p>
+      <button id="restart">Play Again</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
