@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+h2 i {
+  color: #e74c3c;
+}
+
+/* Container */
+.container {
+  position: relative;
+  cursor: pointer;
+  width: 300px;
+}
+
+.container img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Heart Icon */
+.container i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 6rem;
+  color: #e74c3c;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  pointer-events: none;
+}
+
+.container i.show {
+  animation: heartPop 1s ease forwards;
+}
+
+/* Likes Counter */
+#likes-count {
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+#likes-count i {
+  color: #e74c3c;
+}
+
+@keyframes heartPop {
+  0%   { transform: translate(-50%, -50%) scale(0); opacity: 1; }
+  50%  { transform: translate(-50%, -50%) scale(1.4); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
+}

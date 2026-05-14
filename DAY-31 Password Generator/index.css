@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #16213e;
+  border-radius: 16px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+/* Result Box */
+.result-container {
+  background-color: #0f3460;
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 52px;
+  word-break: break-all;
+}
+
+#result {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #58a6ff;
+  flex: 1;
+}
+
+#clipboard {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+#clipboard:hover {
+  transform: scale(1.2);
+}
+
+/* Settings */
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.setting input[type="number"] {
+  width: 60px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0f3460;
+  color: #eee;
+  font-size: 0.9rem;
+  text-align: center;
+  outline: none;
+}
+
+.setting input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #58a6ff;
+}
+
+/* Generate Button */
+#generate {
+  padding: 12px;
+  background-color: #58a6ff;
+  color: #1a1a2e;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#generate:hover {
+  background-color: #3b8fe8;
+}

@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+p {
+  color: #aaa;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+p strong {
+  color: #58a6ff;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: #16213e;
+  padding: 14px 24px;
+  border-radius: 10px;
+  width: 260px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease;
+}
+
+.list li:has(input:checked) {
+  background-color: #0f3460;
+}
+
+.list label {
+  font-size: 1.1rem;
+  cursor: pointer;
+  flex: 1;
+}
+
+.list input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #58a6ff;
+}
+
+.list input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.list li:has(input:disabled) label {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
